@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="title", content="Weather App")
+        meta(name="description", content="")
+        meta(name="keywords", content="")
+        title Weather App
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css", integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl", crossorigin="anonymous")
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js", integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0", crossorigin="anonymous") 
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+        link(rel="stylesheet", href="css/weather.css")
+    body 
+        h1="Weather in " + h1
+        div(class="row")
+            div(class="col-md-6")
+                h4 Temperature
+                p=temperature + "ºC"
+            div(class="col-md-6")
+                h4 Temp Range
+                p=min_temp + "ºC/" + max_temp + "ºC"
+            div(class="col-md-12")
+                img(src=icon, alt=description, title=imgtitle)
+        div(class="row")
+            div(class="col")
+                h4 Air Humidity 
+                p=humidity + "%"
+                button(class="btn btn-dark") Search another city?
+        form(method="POST")
+            input(type="text", name="city", placeholder="City name", class="btn")
+            input(type="submit", value="Submit", class="btn btn-success")
+        script(src="js/weather.js") 
