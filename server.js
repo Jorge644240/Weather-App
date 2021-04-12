@@ -1,19 +1,17 @@
 const express = require("express");
-const bodyParser = require("body-parser");
 const https = require("https");
 const app = express();
 const port = 3000;
 
 app.use(express.static(`${__dirname}/static`));
-app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "pug");
 
 app.get("/", (req, res) => {
     res.sendFile(`${__dirname}/index.html`);
 });
 
-app.post("/", (req, res) => {
-    const city = req.body.city;
+app.get("/weather", (req, res) => {
+    const city = req.query.city;
     const key = '3a3c3994741758125ad419d94a01493f';
     const url = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + key + '&units=metric';
     https.get(url,
