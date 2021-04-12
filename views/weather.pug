@@ -28,7 +28,7 @@ html(lang="en")
                 h4 Air Humidity 
                 p=humidity + "%"
                 button(class="btn btn-dark") Search another city?
-        form(method="POST")
+        form(action="/weather")
             input(type="text", name="city", placeholder="City name", class="btn")
             input(type="submit", value="Submit", class="btn btn-success")
         script(src="js/weather.js") 
