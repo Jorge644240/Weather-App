@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
 
 app.get("/weather", (req, res) => {
     const city = req.query.city;
-    const key = '3a3c3994741758125ad419d94a01493f';
+    const key; //API key
     const url = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + key + '&units=metric';
     https.get(url,
     (response) => {
