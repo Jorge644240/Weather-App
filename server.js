@@ -1,7 +1,7 @@
 const express = require("express");
 const https = require("https");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.static(`${__dirname}/static`));
 app.set("view engine", "pug");
