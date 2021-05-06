@@ -18,7 +18,6 @@ app.get("/weather", (req, res) => {
     (response) => {
         response.on("data", (data) => {
             const weather = JSON.parse(data);
-            console.log(weather);
             const icon = "http://openweathermap.org/img/wn/" + weather.weather[0].icon + "@4x.png";
             res.render("weather", {
                 h1:`${city}, ${weather.sys.country}`,
