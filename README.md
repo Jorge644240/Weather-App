@@ -12,6 +12,10 @@
 
 ## Overview
 
+This application allows users to search for real-time weather data of any city or town in the world.
+The search results include the real-time temperature, the expected temperature range for the day, and the relative air humidity (as a percentage), as well as a small icon to represent the overall current weather data.
+After every search, the user is allowed to search a different city and get a completely different result.
+
 ### Screenshots
 
 #### Initial site
@@ -36,13 +40,13 @@ Screenshot of the application showing real-time weather results for the searched
 
 - [Node.js](https://nodejs.org/en/)
 - [Express](http://expressjs.com/)
+- [Pug](https://pugjs.org/api/getting-started.html) (Template Engine)
 
 ### Client Side
 
 - HTML5
 - CSS3
 - JavaScript ([jQuery](https://jquery.com/))
-- [Pug](https://pugjs.org/api/getting-started.html) (View Engine)
 
 ### APIs
 
