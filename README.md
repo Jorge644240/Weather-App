@@ -57,5 +57,3 @@ Screenshot of the application showing real-time weather results for the searched
 Project created by [Jorge Gallego](https://github.com/Jorge644240)
 
 - [Web CV](https://jorge644240.github.io/CV/)
-
-<!-- ## Online weather app built with JavaScript (Node/Express) and the Open Weather Map API. -->
