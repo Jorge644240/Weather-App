@@ -54,6 +54,10 @@ input[type="text"]
     {
         font-size: 3rem;
     }
+    input[type="text"]
+    {
+        width: 40vw;
+    }
 }
 @media screen and (max-width: 500px)
 {
@@ -64,5 +68,9 @@ input[type="text"]
     input
     {
         font-size: 1.2rem;
+    }
+    input[type="text"]
+    {
+        width: 60vw;
     }
 }
