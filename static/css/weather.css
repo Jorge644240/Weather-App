@@ -75,3 +75,21 @@ input[type="text"]
     75%{background-color: #6C8DF0;}
     100%{background-color: #6CC6F0;}
 }
+@media screen and (max-width: 750px)
+{
+    input[type="text"]
+    {
+        width: 40vw;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    input
+    {
+        font-size: 1.2rem;
+    }
+    input[type="text"]
+    {
+        width: 60vw;
+    }
+}
