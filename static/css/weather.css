@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo&family=Poppins&family=Montserrat&display=swap');
 body
 {
-    margin: 0;
-    animation: bg 10s infinite;
     color: #FFFFFF;
 }
 h1
@@ -53,25 +51,4 @@ form
     text-align: center;
     width: 100vw;
     display: none;
-}
-input
-{
-    font-family: 'Poppins';
-    font-size: 1.5rem;
-    border: 1px solid rgba(170, 170, 170, 0.7);
-    padding: 0 1%;
-}
-input[type="text"]
-{
-    width: 20vw;
-    background-color: #FFFFFF;
-    border: 1px solid #000000;
-}
-@keyframes bg
-{
-    0%{background-color: #6CC6F0;}
-    25%{background-color: #6C8DF0;}
-    50%{background-color: #444499;}
-    75%{background-color: #6C8DF0;}
-    100%{background-color: #6CC6F0;}
 }
