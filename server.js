@@ -1,5 +1,6 @@
 const express = require("express");
 const https = require("https");
+const path = require("path");
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -31,6 +32,22 @@ app.get("/weather", (req, res) => {
             });
         });
     });
+});
+
+app.all("/robots.txt", (req, res) => {
+    res.sendFile(path.join(__dirname, "robots.txt"));
+});
+
+app.all("/sitemap.xml", (req, res) => {
+    res.sendFile(path.join(__dirname, "sitemap.xml"));
+});
+
+app.all(["*/robots", "*/robots.txt"], (req, res) => {
+    res.redirect("/robots.txt");
+});
+
+app.all(["*/sitemap", "*/sitemap.xml"], (req, res) => {
+    res.redirect("/sitemap.xml");
 });
 
 app.listen(port, () => {
