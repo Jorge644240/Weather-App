@@ -1,6 +1,6 @@
 {
   "name": "weather-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Weather app powered by the Open Weather Map API.",
   "main": "server.js",
   "scripts": {
