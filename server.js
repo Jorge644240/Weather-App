@@ -2,6 +2,7 @@ const express = require("express");
 const https = require("https");
 const path = require("path");
 const app = express();
+require("dotenv").config();
 const port = process.env.PORT || 3002;
 
 app.use(express.static(`${__dirname}/static`));
@@ -13,7 +14,7 @@ app.get("/", (req, res) => {
 
 app.get("/weather", (req, res) => {
     const city = req.query.city;
-    const key = '3a3c3994741758125ad419d94a01493f';
+    const key = process.env.API_KEY;
     const url = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + key + '&units=metric';
     https.get(url,
     (response) => {
