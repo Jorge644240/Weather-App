@@ -3,7 +3,7 @@ const https = require("https");
 const path = require("path");
 const app = express();
 require("dotenv").config();
-const port = process.env.PORT || 3002;
+const port = 3002;
 
 app.use(express.static(`${__dirname}/static`));
 app.set("view engine", "pug");
